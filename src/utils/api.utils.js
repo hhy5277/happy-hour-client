@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = process.env.NODE_ENV === 'production' ? 'https://92f6vkght7.execute-api.us-east-1.amazonaws.com/dev/api' : 'http://localhost:8080/api';
 
 export default {
   getRequests() {
